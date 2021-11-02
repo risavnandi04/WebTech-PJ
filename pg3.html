@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <title>Movie ticket booking system</title>
+   <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <style>
+       body{
+             background-color:#5A5959;             
+          }
+
+         #home{
+         color:white;
+         background-color:#4B4ED6;
+         padding: 6px; 
+         margin-left:8px;         
+         margin-top: 8px;
+         margin-bottom:8px
+       }
+
+      #logout{
+        color:white;
+        margin-left:20px;  
+        background-color:#4B4ED6;
+        padding: 6px;          
+        margin-top: 8px;
+       }
+
+      .topnav {
+  overflow: hidden;
+  background-color: #353535;
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  width:250px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 40px;
+  font-size: 17px;
+}
+
+       #header{
+           margin-left:640px;
+           padding:0.001px;
+           font-size:20px
+        }
+       .grid-container {
+		
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-gap: 20px;
+		width : 1275px;
+		height : 250px;
+		margin-left : 85px;
+                margin-top:20px
+	}
+	
+	.grid-child {
+	        background-color: white;           
+		
+	}
+	   
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+       <a id = "home" class="active" href="#home">Home</a>
+        <input id = "search" type="text" placeholder="Search..">       
+       <a id = "logout" href="#logout">Logout</a>
+      
+       <h3 id="header" style="color:white;font-style:Georgia">MOVIE MANIA</h3>
+     
+    </div>
+    <script type="text/javascript">
+    document.getElementById("logout").onclick = function () {
+        location.href = "pg1.html";
+    };
+   
+    </script>
+   
+     <h3 style="color:white;margin-left:50px;font-style:Times New Roman">ENGLISH</h3>
+     <div id="root1"></div><br/><br/><br/>
+     <h3 style="color:white;margin-left:50px;">HINDI</h3>
+     <div id="root2"></div>
+    <script type="text/babel">
+		
+    class Main1 extends React.Component {
+       		
+        render() {
+          return (
+              <div class="grid-container">
+		<div class="grid-child"><img src="jungle-cruise.jpg" height = "300" width = "175"/></div>  
+                <div class="grid-child"><img src="avengers-endgame.jpg" height = "300" width = "175"/></div>
+                <div class="grid-child"><img src="venom.jpg" height = "300" width = "175"/></div>
+                <div class="grid-child"><img src="mi.jpg" height = "300" width = "175"/></div>
+		<div class="grid-child"><img src="black-widow.jpeg" height = "300" width = "175"/></div>
+		<div class="grid-child"><img src="spiderman.jpg" height = "300" width = "175"/></div>
+		<div class="grid-child"><img src="minions.jpg" height = "300" width = "175"/></div>
+	      </div>
+           
+          );
+        }
+      }
+      ReactDOM.render(<Main1 />, document.getElementById("root1"));
+  
+     
+     class Main2 extends React.Component {
+       		
+        render() {
+          return (
+              <div class="grid-container">
+		<div class="grid-child"><img src="shershaah.jpg" height = "300" width = "175"/></div>  
+                <div class="grid-child"><img src="bellbottom.jpg" height = "300" width = "175"/></div>
+                <div class="grid-child"><img src="sooryavanshi.jpg" height = "300" width = "175"/></div>
+                <div class="grid-child"><img src="bunty-aur-babli2.jpg" height = "300" width = "175"/></div>
+		<div class="grid-child"><img src="mimi.jpg" height = "300" width = "175"/></div>
+		<div class="grid-child"><img src="thalaivi.jpg" height = "300" width = "175"/></div>
+		<div class="grid-child"><img src="gangubai.jpg" height = "300" width = "175"/></div>
+	      </div>
+           
+          );
+        }
+      }
+      ReactDOM.render(<Main2 />, document.getElementById("root2"));
+	</script>   
+  </body>
+</html>
