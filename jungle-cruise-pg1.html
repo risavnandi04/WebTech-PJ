@@ -1,0 +1,195 @@
+<html>
+  <head>
+    <title>Movie ticket booking system</title>
+   <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <style>
+       body{
+             background-color:#363636;             
+          }
+
+         #home{
+         color:white;
+         background-color:#4B4ED6;
+         padding: 6px; 
+         margin-left:8px;         
+         margin-top: 8px;
+         margin-bottom:8px
+       }
+
+      #logout{
+        color:white;
+        margin-left:20px;  
+        background-color:#4B4ED6;
+        padding: 6px;          
+        margin-top: 8px;
+         margin-bottom:8px
+       }
+
+      .topnav {
+  overflow: hidden;
+  background-color: #242424;
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+      .tab {
+            display: inline-block;
+            margin-left: 50px;
+        }
+
+       .tab1 {
+            display: inline-block;
+            margin-left: 1000px;
+        }
+ 
+       .tab2 {
+            display: inline-block;
+            margin-left: 50px;
+        } 
+
+       #header{
+           margin-left:640px;
+         
+           font-size:20px
+        }
+	   
+       #title{
+         margin-top:5px;
+       }
+
+       #trailer{
+         margin-top:5px;
+       }
+
+      .summary{
+        color:black;
+	margin-left:10px;
+        background-color:white;
+        width:800px;
+        height:140px;
+	padding:8px;
+       }
+
+      .rating1{
+        position:relative;
+        left:1105px;
+        bottom:155px;
+        opacity:0.8;
+       }
+
+       .rating2{
+        position:relative;
+        left:1127px;
+        bottom:190px;
+       }
+
+       .review1{
+        position:relative;
+        left:1100px;
+        bottom:190px;
+       }
+
+       .review2{
+        position:relative;
+        left:850px;
+        bottom:190px;
+        background-color:white;
+        width:560px;
+        height:80px;
+	padding:8px;
+       }
+
+       .review3{
+        position:relative;
+        left:850px;
+        bottom:200px;
+        background-color:white;
+        width:560px;
+        height:60px;
+	padding:8px;
+       }
+
+        .cast{
+        color:white;
+        position:relative;
+        left:25px;
+        bottom:5px;
+       }
+
+       .castpic{
+         border-radius:50%;
+         bottom:10px;
+         margin-left:15px;
+       }
+
+       #bookticket{
+        position:relative;
+        left:385px;
+        bottom:20px;
+        width:130px;
+        height:60px;
+        color:white;
+        background-color:#4B4ED6;
+        padding: 6px; 
+       }   
+
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+       <a id = "home" class="active" href="#home">Home</a>
+       <a id = "logout" href="#logout">Logout</a>     
+       <h3 id="header" style="color:white;font-style:Georgia">MOVIE MANIA</h3>
+    </div>
+    <div id = "title" class="topnav"> 
+       <h3 style="color:white;font-style:Georgia;margin-left:30px;">JUNGLE CRUISE<span class="tab"></span>Genre : Fantasy , Adventure<span class="tab"></span>Release Date : July 30, 2021<span class="tab"></span>Duration : 127 mins</h3>      
+    </div>
+
+    <video src="jungle-cruise.mp4" width="1500" height="380" style="background-color: black" controls></video>
+   
+    <h4 style="color:white;margin-left:30px;">SUMMARY<span class="tab1"></span>RATING</h4>
+    <div class="summary">
+    <p> Lily travels from London, England to the Amazon jungle and enlists Frank's questionable services to guide her downriver on La Quila--his ramshackle-but-charming boat. Lily is determined to uncover an ancient tree with unparalleled healing abilities--possessing the power to change the future of medicine. Thrust on this epic quest together, the unlikely duo encounters innumerable dangers and supernatural forces, all lurking in the deceptive beauty of the lush rainforest. But as the secrets of the lost tree unfold, the stakes reach even higher for Lily and Frank and their fate--and mankind's--hangs in the balance.</p>    
+    <img class = "rating1" src="heart.jpg" width="20" height="20"><p class = "rating2" style="color:white">95%</p>
+    <h4 class = "review1" style="color:white">REVIEWS</h4>
+    <p class ="review2">1. A great adventure film and while it is reminiscent of Indiana Jones and the Mummy, it has some original twists and the humor makes the film. Blunt and Johnson are great and Plemmons looks like he is seventh heaven chewing up the scenery!. Well Directed and written. Enjoyable from beginning to end.</p>
+    <p class ="review3">2. Jungle Cruise is by no means a perfect movie. It has a few flaws that stop me from giving a wholehearted recommendation. But it is a fun, campy movie you can enjoy with the family, and a diverting throwback to the 80s and 90s adventure films.</p>
+   </div>
+
+   <h4 class="cast">CAST</h4>
+   <img class="castpic" src="dwayne-johnson.jpg" style="width:100px;height:100px;">
+   <img class="castpic" src="emily-blunt.jpg" style="width:100px;height:100px;">
+   <img class="castpic" src="edgar-ramirez.jpg" style="width:100px;height:100px;">
+   <img class="castpic" src="jack-whitehall.jpg" style="width:100px;height:100px;">
+   <img class="castpic" src="jesse-plemons.jpg" style="width:100px;height:100px;">
+   <img class="castpic" src="paul-giamatti.jpg" style="width:100px;height:100px;"> 
+
+   <button id="bookticket">BOOK TICKET</button>  
+
+   <script type="text/javascript">
+    document.getElementById("logout").onclick = function () {
+        location.href = "pg1.html";
+    };
+   
+    </script>
+        
+  </body>
+</html>

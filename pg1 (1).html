@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>Movie ticket booking system</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+   <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+	  body{
+             background-image : url("interstellar.jpg"); 
+             background-repeat:no-repeat; 
+             background-size:100% 100%;
+          }
+          .h3{
+            font-family : Georgia;
+             font-style: italic;
+             font-size: 40px;
+             color: white;  
+             margin-top : 170px;
+             margin-left : 725px;
+          }                  
+          .header{
+             font-family : Georgia;
+             font-style: italic;
+             font-size: 80px;
+             color: white;  
+             margin-top : 30px;
+             margin-left : 550px;
+          }     
+          #btn1{
+            font-family : Calibri;
+            font-size: 18px;
+            background-color:#4B4ED6;
+            color:white;
+            margin-left : 575px;
+            margin-top : 35px;
+            height:45px;
+            width:100px;
+           }
+         #btn2{
+            font-family : Calibri;
+            font-size: 18px;
+            background-color:#4B4ED6;
+            color:white;
+            margin-left : 55px;
+            margin-top : 25px;
+            height:45px;
+            width:100px;
+           }
+    </style>
+    <body>
+      <h3 class = "h3">WELCOME TO</h3>
+      <h1 class = "header">MOVIE MANIA</h1>
+      <input id="btn1" type = "button" value = "LOGIN">
+      <input id="btn2" type = "button" value = "SIGNUP">
+    <script type="text/javascript">
+    document.getElementById("btn1").onclick = function () {
+        location.href = "pg2-login.html";
+    };
+   document.getElementById("btn2").onclick = function () {
+        location.href = "pg2-signup.html";
+    };
+</script>
+   </body>
+</html>
